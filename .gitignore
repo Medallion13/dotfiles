@@ -1,0 +1,12 @@
+# Configuracion local de cada máquina - nunca versionar
+*.local
+.zshrc.local
+.gitconfig.local
+
+# Basura de SO
+.DS_Store
+Thumbs.db
+
+# Respaldos del instalador
+*.bak
+*.bak.*
