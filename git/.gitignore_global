@@ -1,0 +1,20 @@
+# --- SO ---
+.DS_Store
+.AppleDouble
+Thumbs.db
+desktop.ini
+*~
+
+# --- Editors ---
+.idea/
+*.swp
+*.swo
+
+# --- Local Env ---
+.venv/
+venv/
+
+# --- Secrets ---
+*.pem
+*.key
+
