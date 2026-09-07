@@ -1,0 +1,10 @@
+# Mise - global default versions
+# each project can and have to overwrite with its own .mise.toml,
+# .python-version or .nvmrc
+
+[tools]
+node = "lts"
+python = "3.12"
+
+[settings]
+idiomatic_version_file_enable_tools = ["node", "python"]
