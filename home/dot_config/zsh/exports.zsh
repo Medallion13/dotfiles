@@ -1,5 +1,8 @@
 # Env variables for every system
 
+# Avoid Path duplicates
+typeset -U path PATH
+
 # editors
 export EDITOR='nvim'
 export VISUAL='nvim'
