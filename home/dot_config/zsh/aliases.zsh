@@ -23,5 +23,5 @@ alias tn='tmux new -s'
 alias v='nvim'
 
 # --- Dotfiles ---
-alias dotfiles='cd ~/dotfiles'
+alias dotfiles='cd ~/.local/share/chezmoi'
 alias zshreload='source ~/.zshrc'
