@@ -1,0 +1,13 @@
+{{- $perfil := promptChoiceOnce . "perfil" "Perfil" (list "personal" "trabajo" "cliente") -}}
+{{- $email := promptStringOnce . "email" "Correo de git" -}}
+{{- $wsl := false -}}
+{{- if eq .chezmoi.os "linux" -}}
+{{-   if (.chezmoi.kernel.osrelease | lower | contains "microsoft") -}}
+{{-     $wsl = true -}}
+{{-   end -}}
+{{- end -}}
+[data]
+  perfil = {{ $perfil | quote }}
+  email = {{ $email | quote }}
+  wsl = {{ $wsl }}
+  op = {{ and (ne (lookPath "op") "") (ne $perfil "cliente") }}
