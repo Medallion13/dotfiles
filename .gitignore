@@ -10,3 +10,6 @@ Thumbs.db
 # Respaldos del instalador
 *.bak
 *.bak.*
+
+# Excepcion plantillas .local
+!home/create_*.local

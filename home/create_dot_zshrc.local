@@ -1,0 +1,8 @@
+# ~/.zshrc.local: configuración propia de esta máquina.
+# Nunca secretos en claro: usar 1Password (`op`).
+
+# AWS
+# export AWS_PROFILE=
+
+# PATH propio de esta máquina (typeset -U en exports.zsh evita duplicados)
+# path=("$HOME/bin" $path)
