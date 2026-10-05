@@ -1,0 +1,14 @@
+{{- if ne .chezmoi.os "darwin" }}
+.config/zsh/os/macos.zsh
+{{- end }}
+{{- if not .wsl }}
+.config/zsh/os/wsl.zsh
+{{- end }}
+{{- if or (ne .chezmoi.os "linux") .wsl }}
+.config/zsh/os/linux.zsh
+{{- end }}
+{{- if eq .chezmoi.os "windows" }}
+.zshrc
+.config/zsh
+.tmux.conf
+{{- end }}
